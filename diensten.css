@@ -1,0 +1,139 @@
+    
+.kolom81{
+    float: left;
+    width: 5%;
+    padding: 10px;
+}
+
+.kolom82{
+    float: left;
+    width: 40%;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.kolom83{
+    float: left;
+    width: 55%;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+.kolom84{
+    float: left;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.kolom85{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+    
+.kolom811{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.kolom86{
+    float: left;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+
+div.we{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+.kolom81{
+    display: none;
+}
+
+.kolom82{
+    width: 100%;
+}
+
+.kolom83{
+    width: 100%;
+}
+
+.kolom84{
+    width: 100%;
+}
+
+.kolom85{
+    width: 100%;
+    text-align: left;
+}
+
+.kolom86{
+    width: 100%;
+    text-align: left;
+}
+
+.kolom811{
+    width: 100%;
+}
+
+div.we{
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 900px) {
+    .kolom81{
+        display: none;
+    }
+    
+    .kolom82{
+        width: 100%;
+    }
+    
+    .kolom83{
+        width: 100%;
+    }
+    
+    .kolom84{
+        width: 100%;
+    }
+    
+    .kolom85{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .kolom86{
+        width: 100%;
+        text-align: left;
+    }
+    
+    .kolom811{
+        width: 100%;
+    }
+    
+    div.we{
+        width: 100%;
+    }
+    
+    }
+    
+
+  

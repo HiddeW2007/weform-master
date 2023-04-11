@@ -1,0 +1,162 @@
+/* dit zijn wij */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 16.665%;
+    height: fit-content;
+    text-align: left;
+    padding-top: 3%;
+    padding-right: 7%;
+  }
+  
+  .column2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    height: fit-content;
+    
+  }
+
+  
+  
+  .column3 {
+    float: left;
+    width: 33.33%;
+    height: fit-content;
+    text-align: center;
+  }
+  
+  .column4 {
+    float: left;
+    width: 16.665%;
+    height: fit-content;
+    text-align: left;
+    padding-top: 2%;
+    padding-right: 7%;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column19 {
+    display: none;
+  }
+  
+  .column29 {
+    display: none;
+  }
+  
+  .column39 {
+    display: none;
+  }
+  
+  .column49 {
+    display: none;
+  }
+  
+  
+  div.f{
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+    .column1 {
+      float: left;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      padding-bottom: 3%;
+      padding-left: 10%;
+    }
+    
+    .column2 {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      height: fit-content;
+    }
+    
+    .column3 {
+      float: left;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+    }
+    
+    .column4 {
+      float: left;
+      width: 100%;
+      padding-left: 10%;
+      height: fit-content;
+      text-align: center;
+    }
+
+
+  }  
+  
+
+
+    @media screen and (max-width: 1300px) and (min-width: 900px) {
+      .column19 {
+        float: left;
+        width: 50%;
+        height: fit-content;
+        text-align: left;
+        padding-top: 1%;
+        padding-right: 30%;
+        display: block;
+      }
+      
+      .column29 {
+        float: left;
+        width: 50%;
+        text-align: center;
+        height: fit-content;
+        display: block;
+      }
+      
+      .column39 {
+        float: left;
+        width: 50%;
+       text-align: center;
+       display: block;
+      }
+      
+      .column49 {
+        float: left;
+        width:50%;
+        height: fit-content;
+        text-align: left;
+        padding-top: 1%;
+        padding-left: 30%;
+        display: block;
+      }
+
+      .column1 {
+        display: none;
+      }
+      
+      .column2 {
+        display: none;;
+      }
+      
+      .column3 {
+        display: none;
+      }
+      
+      .column4 {
+        display: none;
+      }
+    }

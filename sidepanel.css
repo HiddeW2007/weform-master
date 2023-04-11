@@ -1,0 +1,136 @@
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+    body {
+  background-color: #eedcd9;
+  }
+  
+  .sidepanel  {
+    width: 0;
+
+    position: fixed;
+    z-index: 1;
+    min-height: 100000px;
+    top: 0;
+    left: 0;
+    background-color: #e4bda1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.5s;
+  }
+ 
+  .sidepanel a:hover {
+    color: #eedcd9;
+   
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color:#eedcd900 ;
+    color: #e4947c;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 16px;
+    position: fixed;
+  }
+ 
+  .openbtn:hover span {
+    background-color: #e4bda1;
+    border-radius: 16px;
+    display: none;
+  }
+
+  .openbtn:hover:before{
+    content: " ☰ Menu";
+    transition: 1s;
+  }
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {
+  padding: 6px 8px 6px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+ 
+}
+
+.dropdown-btn:hover {
+  padding: 6px 8px 6px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #eedcd9;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: transparent;
+  color: #eedcd9;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+  color: #eedcd900;
+}
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+

@@ -1,0 +1,164 @@
+    
+  .row12:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .kolom67{
+    display: none;
+}
+.kolom81{
+    float: left;
+    width: 5%;
+    padding: 10px;
+}
+
+.kolom82{
+    float: left;
+    width: 100%;
+    padding-left: 7%;
+    padding-right: 39%;
+    padding-bottom: 3%;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.kolom83{
+    float: left;
+    width: 55%;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+
+.kolom84{
+    float: left;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.kolom824{
+    float: left;
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.kolom85{
+    float: left;
+    width: 60%;
+    padding: 0% 0% 0% 20%;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+    
+.kolom811{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.kolom8111{
+ display: none;
+}
+
+.kolom841{
+    display: none;
+}
+
+.kolom851{
+    display: none;
+}
+
+
+
+.kolom86{
+    float: left;
+    width: 25%;
+    padding: 0%;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+
+@media screen and (max-width: 900px) {
+.kolom81{
+    display: none;
+}
+
+.kolom82{
+    width: 100%;
+    padding: 2%;
+}
+
+.kolom83{
+    width: 100%;
+}
+
+.kolom84{
+    width: 100%;
+}
+
+
+.kolom824{
+    display: none;
+}
+
+.kolom85{
+display: none;
+}
+
+.kolom86{
+    width: 100%;
+    text-align: left;
+}
+.kolom811{
+    display: none;
+}
+
+
+
+.kolom8111{
+    display: inline;
+    float: left;
+    width: 100%;
+
+}
+
+.kolom841{
+    display: flex ;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;  
+    justify-content: center;
+    align-items: center;
+}
+.kolom67{
+    display: block;
+}
+
+.kolom851{
+    display: inline;
+    float: left;
+    width: 100%;
+    font-size: 1.3em;
+    padding: 0px 20px 0px 20px;
+}
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px){
+
+    .kolom86{
+        padding-right: 0%;
+    }
+
+
+}

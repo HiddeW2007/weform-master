@@ -1,0 +1,250 @@
+
+
+
+
+
+
+div.a{
+    text-align: center;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row2:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .gas{
+    display: block;
+  }
+
+  .lol{
+    display: block;
+  }
+  
+  .jas{
+    display: none;
+  }
+
+  .tel{
+    display: none;
+  }
+  .columma{
+    float: left;
+    width: 28.33%;
+    padding: 15px;
+    height: 400px;
+    text-align: center;
+    border-radius: 16px;
+    border-spacing: 30px;
+    background-color: #e5bda29d;
+    display: flex; flex-direction: column; justify-content: space-between; } .columna > p { flex-grow: 1; 
+  }
+
+
+  .colummas{
+    float: left;
+    width: 28.33%;
+    padding: 15px;
+    height: 400px;
+    text-align: center;
+    border-radius: 16px;
+    border-spacing: 30px;
+    background-color: #f8eee7;
+    display: flex; flex-direction: column; justify-content: space-between; } .columna > p { flex-grow: 1; 
+  }
+
+  .aj{
+    display: block;
+  }
+
+  .ja{
+    display: block;
+  }
+  
+  .colummb{
+    float: left;
+    width: 3%;
+    padding: 10px;
+    border-radius: 16px;
+    }
+
+      
+  .colummc{
+    float: left;
+    width: 2%;
+    padding: 10px;
+    border-radius: 16px;
+    }
+
+    .anus{
+      display: none;
+    }
+
+    
+
+
+
+  
+  
+/*tel*/
+    @media screen and (max-width: 648px) {
+      .columma {
+        width: 100%;
+        text-align: center;
+      }
+
+      .colummas {
+        width: 100%;
+        text-align: center;
+      }
+    
+    
+   
+      .colummb {
+        width: 100%;
+        text-align: center;
+      }
+    
+  
+      .colummc {
+        width: 100%;
+        text-align: center;
+        display: none;
+      }
+      .tel{display: block ;}
+
+      .aj{
+        display: block;
+      }
+
+      .jas{
+        display: none;
+      }
+      .ja{
+        display: none;
+      }
+    }
+/*ipad verticaal/*/
+    @media screen and (max-width: 900px) and (min-width:647px) {
+      .columma {
+        width: 45%;
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        height: 400px;   
+        margin-bottom: 3%;
+        background-color: #f8eee7;
+       
+
+      }
+      .colummas {
+        width: 45%;
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        height: 400px;   
+        margin-bottom: 3%;
+        background-color: #e5bda29d;
+       
+
+      }
+    
+      .row2:after{
+        content: "";
+        display: none ;
+        clear: both;
+      }
+    
+   
+      .colummb {
+        width: 4%;
+        text-align: center;
+
+      }
+    
+  
+      .colummc {
+        width: 50%;
+        text-align: center;
+      }
+
+
+      .aj{
+        display: block;
+      }
+
+      .jas{
+        display: block;
+      }
+      .anus{
+        display:none;
+      }
+      .lol{
+        display: block;
+      }
+      .ja{
+        display: none;
+      }
+    }
+  
+
+    /*ipad horizontaal*/
+    @media screen and (max-width: 1300px) and (min-width:900px) {
+      .columma{
+        float: left;
+        width: 28.33%;
+        padding: 15px;
+        height: 420px;
+        text-align: center;
+        border-radius: 16px;
+        border-spacing: 30px;
+      }
+      .colummas{
+        float: left;
+        width: 28.33%;
+        padding: 15px;
+        height: 420px;
+        text-align: center;
+        border-radius: 16px;
+        border-spacing: 30px;
+      }
+      
+      .colummb{
+        float: left;
+        width: 3%;
+        padding: 10px;
+        border-radius: 16px;
+        }
+    
+          
+      .colummc{
+        float: left;
+        width: 3%;
+        padding: 10px;
+        border-radius: 16px;
+        }
+
+        .jas{
+          display: none;
+        }
+
+        .aj{
+          display: none;
+        }
+        .gas{
+          display: none;
+        }
+
+      .ja{
+        display: block;
+      }
+    }
+  
+   /*

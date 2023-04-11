@@ -1,0 +1,189 @@
+div.a{
+    text-align: center;
+}
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row2:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .colummab{
+    float: left;
+    width: 28.33%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 16px;
+    height: 300px;
+    background-color: #f8eee7;
+  }
+
+  .colummas{
+    float: left;
+    width: 28.33%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 16px;
+    height: 300px;
+    background-color: #e5bda29d;
+  }
+  
+  .colummb{
+    float: left;
+    width: 3%;
+    padding: 10px;
+    border-radius: 16px;
+    }
+
+      
+  .colummc{
+    float: left;
+    width: 3%;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+
+
+
+  
+  
+
+  @media screen and (max-width: 800px) {
+    .colummab {
+      width: 100%;
+      text-align: center;
+      height: 50%;
+    }
+
+    .colummas {
+      width: 100%;
+      text-align: center;
+      height: 50%;
+    }
+
+
+    .colummb {
+      width: 100%;
+      text-align: center;
+    }
+  
+
+
+    .colummc {
+      width: 100%;
+      text-align: center;
+      display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 800px){
+  .colummab{
+    float: left;
+    width: 28.33%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 16px;
+    height: 400px;
+  }
+
+  .colummas{
+    float: left;
+    width: 28.33%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 16px;
+    height: 400px;
+  }
+  
+  .colummb{
+    float: left;
+    width: 3%;
+    padding: 10px;
+    border-radius: 16px;
+    }
+
+      
+  .colummc{
+    float: left;
+    width: 3%;
+    padding: 10px;
+    border-radius: 16px;
+}
+  }
+
+
+
+
+
+    /*ipad verticaal/*/
+    @media screen and (max-width: 900px) and (min-width:647px) {
+      .colummab {
+        width: 45%;
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        height: 400px;   
+        margin-bottom: 3%;
+        background-color: #e5bda29d;
+       
+
+      }
+      .colummas {
+        width: 45%;
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        height: 400px;   
+        margin-bottom: 3%;
+        background-color: #f8eee7;
+       
+
+      }
+    
+      .row2:after{
+        content: "";
+        display: none ;
+        clear: both;
+      }
+    
+   
+      .colummb {
+        width: 4%;
+        text-align: center;
+
+      }
+    
+  
+      .colummc {
+        width: 50%;
+        text-align: center;
+      }
+
+
+      .aj{
+        display: block;
+      }
+
+      .jas{
+        display: block;
+      }
+      .anus{
+        display:none;
+      }
+      .lol{
+        display: block;
+      }
+      .ja{
+        display: none;
+      }
+    }
