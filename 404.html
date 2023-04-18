@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>404 :/</title>
+	<style>
+		body {
+			background-color: #d5461655;
+			font-family: Arial, sans-serif;
+			color: #ffffff;
+			animation: colorChange 5s infinite alternate;
+		}
+		
+		h1 {
+			font-size: 6em;
+			margin: 0;
+			text-align: center;
+			padding-top: 10%;
+		}
+		
+		p {
+			font-size: 1.5em;
+			text-align: center;
+			margin-top: 2%;
+		}
+
+		
+		a {
+			color: #d54616c0;
+		}
+
+		@keyframes colorChange {
+			from {background-color: #d5461655;}
+			to {background-color: #d5461693;}
+		}
+	</style>
+</head>
+<body>
+	<h1>404</h1>
+	<p>De pagina die u zoekt, kon niet worden gevonden. U word automatisch terug geleid naar <a href="https://onzin12345.online">de homepage</a>.</p>
+</body>
+
+<h1 id="timer">10</h1>
+<script>
+    var count = 10; // stel de beginwaarde van de timer in
+    var timer = setInterval(function() { // stel de timer in
+        count--; // verminder de waarde van de timer met 1
+        document.getElementById("timer").innerHTML = count; // update de waarde van de timer in de HTML
+        if (count == 0) { // als de timer afloopt
+            clearInterval(timer); // stop de timer
+            window.location.href = "https://onzin12345.online"; // stuur de gebruiker door naar de opgegeven URL
+        }
+    }, 1000); // stel de interval in op 1 seconde (1000 milliseconden)
+</script>
+</html>

@@ -179,6 +179,7 @@
         <div class="b">
         <p>© WeFormConsultancy 2022-2023</p>
         </div>
+        <footer>moiguh</footer>
         
           <script>
           function openNav() {
@@ -253,6 +254,21 @@ form.addEventListener('submit', function(e) {
 });
 
         </script>
+
+<script>
+import mysql from "mysql2/promise";
+
+const client = await mysql.createConnection({
+  host: 'psedge.global',
+  port: parseInt(process.env.POLYSCALE_WEFORM_PORT),
+  user: process.env.POLYSCALE_WEFORM_USERNAME,
+  password: process.env.POLYSCALE_WEFORM_PASSWORD,
+  database: process.env.POLYSCALE_WEFORM_DATABASE,
+  ssl: {
+    rejectUnauthorized: true,
+  },
+});
+</script>
 
 <script>
   /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */

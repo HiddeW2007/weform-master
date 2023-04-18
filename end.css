@@ -4,6 +4,7 @@
 ::selection {
   color: black;
   background: #e4bda4;
+  border-radius: 16px;
 }
 
 @media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
