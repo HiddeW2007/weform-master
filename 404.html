@@ -35,15 +35,46 @@
 			from {background-color: #d5461655;}
 			to {background-color: #d5461693;}
 		}
+
+		@media screen and (orientation: portrait) and  (max-width: 900px) {
+			h1 {
+			font-size: 6em;
+			margin: 0;
+			text-align: center;
+			padding-top: 40%;
+		}
+		
+		p {
+			font-size: 1.5em;
+			text-align: center;
+			margin-top: 10%;
+		}
+		}
+
+			@media screen and (orientation: landscape) and  (max-width: 900px) {
+			h1 {
+			font-size: 6em;
+			margin: 0;
+			text-align: center;
+			padding-top: 5%;
+		}
+		
+		p {
+			font-size: 1.5em;
+			text-align: center;
+			margin-top: 5%;
+		}
+		}
 	</style>
 </head>
 <body>
-	<h1>404</h1>
+	<h1 style="color: grey;">404</h1>
 	<p>De pagina die u zoekt, kon niet worden gevonden. U word automatisch terug geleid naar <a href="https://onzin12345.online">de homepage</a>.</p>
 </body>
 
 <h1 id="timer">10</h1>
 <script>
+	
     var count = 10; // stel de beginwaarde van de timer in
     var timer = setInterval(function() { // stel de timer in
         count--; // verminder de waarde van de timer met 1
@@ -53,5 +84,7 @@
             window.location.href = "https://onzin12345.online"; // stuur de gebruiker door naar de opgegeven URL
         }
     }, 1000); // stel de interval in op 1 seconde (1000 milliseconden)
+
 </script>
+
 </html>
