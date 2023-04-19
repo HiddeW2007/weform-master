@@ -84,6 +84,7 @@
     </div>
     <br class="ja"> <br class="ja"> <br class="ja"> <hr class="ja"><br><br>
 
+  
 
     <!--desktop-->
     <div class="row1">
@@ -100,7 +101,7 @@
           <a style="color: #d54616;" href="mailto: raveena.sussenbach@weformconsultancy.nl ">raveena.sussenbach@weformconsultancy.nl </a>
       </div>
       <div class="kolom824">
-        <img src="5.png" alt="Raveena" style="width:300px;height:400px;object-fit:cover;">
+        <img src="5.png" alt="Raveena" onclick="openModal(this)"  style="width:300px;border-radius: 16px;height:400px;object-fit:cover;">
         <h1 style="font-size: large;color: #d54616;">Raveena Sussenbach</h1>
       </div>
     </div>
@@ -111,7 +112,7 @@
 <div class="row1" >
   <div class="kolom8111"></div>
   <div class="kolom841">
-    <img src="5.png" alt="Raveena" style="width:300px;height:400px;object-fit:cover;"></div>
+    <img src="5.png" alt="Raveena" onclick="openModal(this)" style="width:300px;height:400px;object-fit:cover;"></div>
     <h1  class="kolom67" style="font-size: large;color: #d54616; text-align: center;">Raveena Sussenbach</h1>
   
   <div class="kolom851">
@@ -136,7 +137,7 @@
 <div class="row1">
 
 <div class="kolom84">
-  <img src="6.jpg" alt="Iris" style="width:300px;height:400px;object-fit:cover;">
+  <img src="6.jpg" alt="Iris" onclick="openModal(this)" style="width:300px;height:400px;object-fit:cover;">
   <h1 style="font-size: large;color: #d54616;">Iris van der Hoeven</h1>
 </div>
   <div class="kolom86">
@@ -148,6 +149,11 @@
      Gaan tot het  gaatje en dé perfecte oplossing vinden tussen al die mogelijke uitkomsten, je hebt aan mij de juiste.” </p>
      <a style="color: #d54616;" href="mailto: iris.van.der.hoeven@weformconsultancy.nl ">iris.van.der.hoeven<br class="kolom851">@weformconsultancy.nl </a>
   </div>
+</div>
+
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
 </div>
 
 <br><hr><br>
@@ -243,6 +249,21 @@
     });
   }
   </script>
+
+          
+<script>
+  function openModal(img) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+  }
+
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
+</script>
 
         
         </body>

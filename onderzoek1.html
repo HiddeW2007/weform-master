@@ -48,8 +48,7 @@
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)"class="closebtn"onclick="closeNav()">×</a>
         <a href="Index.html">Home</a>
-        <button class="dropdown-btn">Onze diensten
-        </button>
+        <button class="dropdown-btn">Onze diensten</button>
         <div class="dropdown-container">
           <a style="font-size: large;" href="Diensten.html">Alle Diensten</a>
           <a style="font-size: large;" href="onderzoek1.html">Medewerker onderzoek</a>
@@ -87,10 +86,14 @@
  
 
 <div class="we"><br>
-        <img src="7.png" alt="Onderzoek" onclick="window.open('7.png');" style="width:900px;height:auto;object-fit:cover; border-radius: 16px;"><br><br><br>
+        <img src="7.png" alt="Onderzoek" onclick="openModal(this)" style="width:900px;height:auto;object-fit:cover; border-radius: 16px;"><br><br><br>
 </div>
 <br><br><hr><br>
 
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
 
 
 
@@ -185,8 +188,20 @@
         
         
         
-        <script>
-        </script>
+                <script>
+                  function openModal(img) {
+                    var modal = document.getElementById("myModal");
+                    var modalImg = document.getElementById("img01");
+                    modal.style.display = "flex";
+                    modalImg.src = img.src;
+                  }
+                
+                  function closeModal() {
+                    var modal = document.getElementById("myModal");
+                    modal.style.display = "none";
+                  }
+                </script>
+                
         </body>
         
         </html>

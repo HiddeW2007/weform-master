@@ -83,7 +83,7 @@
 </div>
 
 <div class="column-2" style="background-color: #eedcc100;">
-  <img src="IMG2.png" alt="WeForm" width="700px" height="34">
+  <img src="IMG2.png" alt="WeForm" onclick="openModal(this)" width="700px" height="34">
   </div>
   <div class="column-1" style="background-color:#eedcc100;">
     <p style="font-size: larger;">Ons geloof in impactvolle communicatie van  binnenuit zorgt voor groei binnen elke organisatie. 
@@ -105,14 +105,21 @@
 <!--tel/laptop-->
 <div class="row1">
   <div class="column2" style="background-color:#eac0b100;">
-    <img src="4.png" alt="Raveena" style="width:400px;height:300px;object-fit:cover;">
+    <img src="4.png" alt="Raveena" onclick="openModal(this)" style="width:400px;height:300px;object-fit:cover;">
+ 
+    <div id="myModal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
+
     <h1 style="font-size: larger;color: #d54616;">Raveena Sussenbach</h1>
   </div>
   <div class="column1" style="background-color:#eac0b100;">
    <div style="font-size: larger;">Raveena streeft naar perfectie vanuit een onverwachte hoek. Haar directe aanpak zorgt voor een vlotte en eerlijke samenwerking.</div>
     </div>
     <div class="column3" style="background-color:#eac0b100;">
-    <img src="3.png" alt="Iris" style="width:400px;height:300px;object-fit:cover;">
+    <img src="3.png" alt="Iris" onclick="openModal(this)" style="width:400px;height:300px;object-fit:cover;">
+
     <h1 style="font-size: larger;color: #d54616;">Iris van Der Hoeven</h1>
   </div>
   <div class="column4" style="background-color:#eac0b100;">
@@ -123,7 +130,7 @@
 <!--tablet-->
 <div class="row1">
   <div class="column29" style="background-color:#eac0b100;">
-    <img src="4.png" alt="Raveena" style="width:400px;height:300px;object-fit:cover;">
+    <img src="4.png" onclick="openModal(this)" alt="Raveena" style="width:400px;height:300px;object-fit:cover;">
     <h1 style="font-size: larger;color: #d54616;">Raveena Sussenbach</h1>
   </div>
   <div class="column19" style="background-color:#eac0b100;">
@@ -135,7 +142,7 @@
     <p style="font-size: larger;">Onze Iris staat continu bewust van veranderen processen binnen onze niche. Met haar oog voor detail ziet ze alles op het juiste moment.</p>
   </div>
     <div class="column39" style="background-color:#eac0b100;">
-    <img src="3.png" alt="Iris" style="width:400px;height:300px;object-fit:cover;">
+    <img src="3.png" onclick="openModal(this)" alt="Iris" style="width:400px;height:300px;object-fit:cover;">
     <h1 style="font-size: larger;color: #d54616;">Iris van Der Hoeven</h1>
   </div>
 
@@ -287,6 +294,22 @@
   </script>
  
  
+
+
+<script>
+	function openModal(img) {
+		var modal = document.getElementById("myModal");
+		var modalImg = document.getElementById("img01");
+		modal.style.display = "flex";
+		modalImg.src = img.src;
+	}
+
+	function closeModal() {
+		var modal = document.getElementById("myModal");
+		modal.style.display = "none";
+	}
+</script>
+
 </body>
 
 </html>

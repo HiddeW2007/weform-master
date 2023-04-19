@@ -83,9 +83,12 @@
  <br><br><hr><br>
 
     <div class="we"><br>
-        <img src="8.png" alt="Onderzoek"  onclick="window.open('8.png');" style="width:900px;height:auto;object-fit:cover; border-radius: 16px;"><br><br><br>
+        <img src="8.png" alt="Onderzoek"  onclick="openModal(this)" style="width:900px;height:auto;object-fit:cover; border-radius: 16px;"><br><br><br>
 </div>
-
+<div id="myModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
 <br><br><br><br><hr><br>
 
 
@@ -178,6 +181,23 @@
     });
   }
   </script>
+          
+        
+        
+          <script>
+            function openModal(img) {
+              var modal = document.getElementById("myModal");
+              var modalImg = document.getElementById("img01");
+              modal.style.display = "flex";
+              modalImg.src = img.src;
+            }
+          
+            function closeModal() {
+              var modal = document.getElementById("myModal");
+              modal.style.display = "none";
+            }
+          </script>
+          
   
         </body>
         
