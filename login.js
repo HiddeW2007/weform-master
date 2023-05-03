@@ -5,7 +5,7 @@ var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 if ( username == "WeForm" && password == "Consultancy"){
  ("Login successfully");
-window.location = "Index.html"; // Redirecting to other page.
+window.location = "https://onzin12345.online"; // Redirecting to other page.
 return false;
 }
 else{
