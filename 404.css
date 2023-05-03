@@ -1,0 +1,59 @@
+body {
+    background-color: #d5461655;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    animation: colorChange 5s infinite alternate;
+}
+
+h1 {
+    font-size: 6em;
+    margin: 0;
+    text-align: center;
+    padding-top: 10%;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+a {
+    color: #d54616c0;
+}
+
+@keyframes colorChange {
+    from {background-color: #d5461655;}
+    to {background-color: #d5461693;}
+}
+
+@media screen and (orientation: portrait) and  (max-width: 900px) {
+    h1 {
+    font-size: 6em;
+    margin: 0;
+    text-align: center;
+    padding-top: 40%;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 10%;
+}
+}
+
+    @media screen and (orientation: landscape) and  (max-width: 900px) {
+    h1 {
+    font-size: 6em;
+    margin: 0;
+    text-align: center;
+    padding-top: 5%;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5%;
+}
+}

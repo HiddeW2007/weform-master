@@ -167,9 +167,10 @@ img{
   }
   
   a:hover {
-    color: #d54616;
+    color: #d54616dc;
     background-color:transparent;
     text-decoration: none; 
+    transition: 0.5s
   }
 
   .fa{
@@ -181,9 +182,7 @@ img{
     
   }
   
-  .fa:hover {
-      opacity: 0.6;
-  }
+
 
 
   
