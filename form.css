@@ -98,7 +98,14 @@ button[type="submit"]{
   cursor: pointer;
   border-radius: 16px;
   font-family: Poppins;
-  border-bottom-style: groove;
+  border: none;
+  box-shadow: 0 7px #666;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
  button:hover[type=submit]{
