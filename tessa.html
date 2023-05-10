@@ -12,7 +12,8 @@ p {
 </head>
 <style>
     body{
-        background-color: pink;
+        background-color: lightblue;
+        
         }
         
         audio{
@@ -23,19 +24,17 @@ p {
 
 </style>
 <body>
-    <title>Tessa Jarig!</title>
+    <title>Hidde Jarig!</title>
 
 
 
 <p  class="demo" id="demo"></p>
 
-<audio controls autoplay="true">
-  <source src="tessa.mp3" type="audio/mpeg" />
-</audio>
+
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("may 10, 2023 00:00:00").getTime();
+var countDownDate = new Date("july 1, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -59,8 +58,17 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Gefelicteerd met je verjaardag ! 📸";
+    document.getElementById("demo").innerHTML = "EXPIRED";
   }
+
+  function playSong(src){
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', src);
+        audioElement.setAttribute('autoplay', 'autoplay');
+        audioElement.play();
+      }
+
+      
 }, 1000);
 </script>
 
