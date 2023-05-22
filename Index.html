@@ -22,25 +22,38 @@
 <link rel="stylesheet" href="scroll.css">
 <link rel="stylesheet" href="kolom8.css">
 <link rel="stylesheet" href="kolom8.css">
+<link rel="stylesheet" href="info.css">
+
+<link rel="stylesheet" href="wij.css">
+
+<link rel="stylesheet" href="end.css">
+
+<link rel="stylesheet" href="knop.css">
+
+<link rel="stylesheet" href="knop2.css">
+
+<link rel="stylesheet" href="sidepanel.css">
+  
 
 </head>
 <body>
 
   
 <script src="script.js"></script>
-<script src="sw.js"></script>
 
 
   <div class="a">
     <h1 style="font-family:'Rubik',sans-serif; color : black;" >WeForm Consultancy</h1>
   </div>
 
-  
-<head>
-  <link rel="stylesheet" href="sidepanel.css">
-  </head>
-  <link rel="manifest" href="weform.json">
+  <style>
+
+</style>
+
     
+  
+
+
   <div id="mySidepanel" class="sidepanel">
     <a href="javascript:void(0)"class="closebtn"onclick="closeNav()">×</a>
     <a href="https://onzin12345.online">Home</a>
@@ -48,7 +61,7 @@
     </button>
     <div class="dropdown-container">
       <a style="font-size: large;" href="https://onzin12345.online/Diensten.html">Alle Diensten</a>
-      <a style="font-size: large;" href="https://onzin12345.online/Onderzoek1">Medewerker onderzoek</a>
+      <a style="font-size: large;" href="https://onzin12345.online/Diensten/Onderzoek1">Medewerker onderzoek</a>
       <a style="font-size: large;" href="https://onzin12345.online/Onderzoek2.html">Instroom onderzoek</a>
       <a style="font-size: large;" href="https://onzin12345.online/Onderzoek3.html">Uitstroom onderzoek</a>
       <a style="font-size: large;" href="https://onzin12345.online/Onderzoek4.html">Participatie onderzoek</a>
@@ -64,17 +77,9 @@
 <p></p>
 <br><br><br>
 </div>
-</head>
 
-<link rel="stylesheet" href="info.css">
 
-<link rel="stylesheet" href="wij.css">
 
-<link rel="stylesheet" href="end.css">
-
-<link rel="stylesheet" href="knop.css">
-
-<link rel="stylesheet" href="knop2.css">
 
 
 <div class="f">
@@ -246,6 +251,23 @@
 
 
 </body>
+
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
 
 </html>
 
